@@ -1,0 +1,23 @@
+.user-card {
+  display: flex;
+
+  &__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: auto;
+    }
+  }
+}
