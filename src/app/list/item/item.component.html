@@ -1,15 +1,14 @@
 <div class="user-card">
   <div class="user-card__avatar">
-    <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="User User">
+    <img [src]="item.avatar" alt="{{item.name}}">
   </div>
   <div class="user-card__content">
     <div class="user-card__header">
-      <h3 class="user-card__title">User User</h3>
-      <span><mat-icon>star</mat-icon></span>
+      <h3 class="user-card__title">{{item.name}}</h3>
+      <span><mat-icon>{{item.marked ? 'star' : 'star_border'}}</mat-icon></span>
     </div>
-    <p class="user-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-      nisi ut aliquip ex ea commodo consequat. </p>
+    <p class="user-card__description">{{item.desc}}</p>
   </div>
-  <a routerLink="/view">Check View</a>
 </div>
+<a routerLink="/view">Check View</a>
+

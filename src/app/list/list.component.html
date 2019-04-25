@@ -1,13 +1,8 @@
 <ul>
-  <li>
-    <app-item></app-item>
+  <li *ngFor="let user of users | async">
+    <app-item [item]="user"></app-item>
   </li>
-  <li>
-    <app-item></app-item>
-  </li>
-  <li>
-    <app-item></app-item>
-  </li>
+
   <mat-paginator [length]="100"
                  [pageSize]="10"
                  [pageSizeOptions]="[5, 10, 25, 100]">
